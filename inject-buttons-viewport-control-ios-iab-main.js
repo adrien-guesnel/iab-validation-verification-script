@@ -1,11 +1,10 @@
 (function () {
   function getMaxSize() {
     var maxSize = window.mraid.getMaxSize();
-    var ratio = window.devicePixelRatio;
 
     return {
-      height: Math.floor(maxSize.height / ratio),
-      width: Math.floor(maxSize.width / ratio),
+      height: Math.floor(maxSize.height),
+      width: Math.floor(maxSize.width),
     };
   }
 
